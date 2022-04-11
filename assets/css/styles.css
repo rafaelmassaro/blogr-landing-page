@@ -166,6 +166,44 @@ input[type="checkbox"],
     color: var(--white-text);
 }
 
+.button.red{
+    background-color: var(--light-red-cta-text);
+    color: var(--white-text);
+    border: 1px solid var(--white-text);
+}
+
+.button.red:hover{
+    color: var(--light-red-cta-text);
+    background-color: var(--white-text);
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1{
+    margin-top: 7rem;
+    font-size: 7rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color: var(--white-text);
+}
+
+.title span{
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: var(--white-text);
+    font-family: 'Overpass', sans-serif;
+}
+
+.container-buttons{
+    margin-top: 5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
 @media(max-width: 1200px){
     .header{
         padding: 2rem;
@@ -311,6 +349,28 @@ input[type="checkbox"],
         background: var(--grayish-blue-footer-text);
         margin: 1.5rem;
     }
+
+    .title h1{
+        margin-top: 4rem;
+        font-size: 3rem;
+        font-weight: 500;
+        text-align: center;
+    }
     
+    .title span{
+        margin-top: 2.2rem;
+        font-size: 1.7rem;
+        font-weight: 300;
+        text-align: center;
+        padding: 0 4rem;
+    }
+
+    .container-buttons{
+        display: flex;
+    }
+
+    .container-buttons .button{
+        padding: 1.4rem 1.4rem;
+    }
 }
 
