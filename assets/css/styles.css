@@ -201,7 +201,7 @@ input[type="checkbox"],
         width: 90%;
         flex-direction: column;
         background-color: var(--white-text);
-
+        padding: 3rem 0;
     }
 
     .dark-icon{
@@ -218,6 +218,7 @@ input[type="checkbox"],
 
     .link-menu-item{
         flex-direction: column;
+
     }
 
     .link-menu-item div{
