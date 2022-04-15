@@ -204,6 +204,64 @@ input[type="checkbox"],
     gap: 1.5rem;
 }
 
+.section-1{
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.section-1-title{
+    font-size: 3rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: var(--very-dark-blue-headings);
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    text-align: center;
+    padding: 7rem;
+}
+
+.section-1-content-1,
+.section-1-content-2{
+    padding: 0 11rem;
+}
+
+.content-1-title,
+.content-2-title{
+    font-size: 2.5rem;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    color: var(--very-dark-blue-headings);
+}
+
+.content-1-description,
+.content-2-description{
+    margin-top: 3.5rem;
+    font-size: 1.6rem;
+    font-family: 'Overpass', sans-serif;
+    color: var(--very-dark-grayish-blue-body-copy);
+    line-height: 2.5rem;
+}
+
+.content-2-description{
+    margin-bottom: 3rem;
+}
+
+.section-1-image{
+    background-image: url('../images/illustration-editor-desktop.svg');
+    background-size: auto;
+    /* background-position: left; */
+    background-repeat: no-repeat;
+    grid-column: 2;
+    grid-row: 1 / -1;
+    z-index: 10;
+}
+
+.content-2-title{
+    margin-top: 6rem;
+}
+
 @media(max-width: 1200px){
     .header{
         padding: 2rem;
