@@ -29,8 +29,8 @@ header{
     width: 100%;
     height: 90vh;
     background-image: url('../images/bg-pattern-intro-desktop.svg'), linear-gradient(to right, var(--very-light-red-gradient-cta-mobile), var(--light-red-gradient-cta-mobile));
-    background-position: center;
-    background-size: cover;
+    background-position: 25% 50%;
+    background-size: auto;
     background-repeat: no-repeat;
     border-radius: 0 0 0 10rem;
 }
@@ -222,9 +222,24 @@ input[type="checkbox"],
     padding: 7rem;
 }
 
+.section-1-content-1{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.section-1-content-2{
+    grid-column: 1/2;
+    grid-row: 3 /4;
+}
+
 .section-1-content-1,
 .section-1-content-2{
-    padding: 0 11rem;
+    padding-left:  11rem;
+}
+
+.section-1-content-2{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .content-1-title,
@@ -239,6 +254,7 @@ input[type="checkbox"],
 .content-2-description{
     margin-top: 3.5rem;
     font-size: 1.6rem;
+    width: 500px;
     font-family: 'Overpass', sans-serif;
     color: var(--very-dark-grayish-blue-body-copy);
     line-height: 2.5rem;
@@ -250,16 +266,65 @@ input[type="checkbox"],
 
 .section-1-image{
     background-image: url('../images/illustration-editor-desktop.svg');
-    background-size: auto;
-    /* background-position: left; */
+    background-size: unset;
+    background-position: unset;
     background-repeat: no-repeat;
-    grid-column: 2;
+    grid-column: 2 / -1;
     grid-row: 1 / -1;
-    z-index: 10;
 }
 
-.content-2-title{
+.section-2{
     margin-top: 6rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    background-color: var(--very-dark-gray-blue-gradient-body);
+    color: var(--white-text);
+    border-radius: 0 10rem 0 10rem;
+}
+
+ .section-2-content{
+    grid-column: 3 / 5;
+    grid-row: 1/2;
+    padding: 11rem 0;
+    z-index: 2;
+}
+
+
+.section-2-title{
+    font-size: 3.3rem;
+    font-family: 'Overpass', sans-serif;
+    font-family: 400;
+}
+
+
+.section-2-description{
+    margin-top: 3.3rem;
+    font-size: 1.6rem;
+    font-family: 'Overpass', sans-serif;
+    width: 520px;
+    line-height: 2.5rem;
+}
+
+
+.section-2-image{
+    grid-column: 1/ 4;
+    grid-row: 1 / 2;
+    background-image: url('../images/bg-pattern-circles.svg');
+    /* background-color: red; */
+    background-size: auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 19rem;
+}
+
+
+.section-2-image img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-35%, -12%);
 }
 
 @media(max-width: 1200px){
