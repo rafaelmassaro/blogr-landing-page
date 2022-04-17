@@ -358,7 +358,6 @@ input[type="checkbox"],
 
 .section-3-title-2{
     margin-top: 9rem;
-    margin-bottom: 9rem;
 }
 
 .section-3-description-1,
@@ -370,6 +369,54 @@ input[type="checkbox"],
     color: var(--very-dark-grayish-blue-body-copy);
     line-height: 2.5rem;
 }
+
+.footer{
+    background-color: var(--very-dark-black-blue-footer-background);
+    border-radius: 0 10rem 0 0;
+    display: flex;
+}
+
+.footer-logo{
+    margin: 7rem 16.5rem;
+}
+
+.footer-menu{
+    display: flex;
+    margin-top: 7rem;
+}
+
+.footer-menu-links{
+    margin-right: 23rem;
+}
+
+.footer-menu-links span{
+    font-size: 1.4rem;
+    font-family: 'Overpass', sans-serif;
+    color: var(--white-text);
+    font-weight: 600;
+}
+
+.footer-menu-links ul{
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu-links ul li{
+    margin-bottom: 2rem;
+}
+
+.footer-menu-links ul a{
+    font-size: 1.4rem;
+    font-family: 'Overpass', sans-serif;
+    color: var(--grayish-blue-footer-text);
+    transition: all .7s;
+}
+
+.footer-menu-links ul a:hover{
+    text-decoration: underline;
+}
+
 
 @media(max-width: 1200px){
     .header{
