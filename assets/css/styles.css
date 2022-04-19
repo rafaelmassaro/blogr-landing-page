@@ -655,5 +655,24 @@ input[type="checkbox"],
     .section-3-content-2{
         margin-top: -5rem;
     }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-menu{
+        margin-top: 0;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .footer-menu-links{
+        margin-right: 0;
+    }
+    
+    .footer-menu-links ul li{
+        margin-bottom: 1rem;
+    }
 }
 
