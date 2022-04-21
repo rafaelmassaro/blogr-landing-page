@@ -23,6 +23,8 @@ html{
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+
+    /* border: 1px solid red; */
 }
 
 header{
@@ -623,6 +625,7 @@ input[type="checkbox"],
 
     .content-1-description,
     .content-2-description,
+    .section-2-description,
     .section-3-description-1,
     .section-3-description-2{
         margin-top: 2.5rem;
@@ -635,7 +638,35 @@ input[type="checkbox"],
     }
 
     .section-2{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr auto;
+    }
 
+    .section-2-image{
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+
+    .section-2-image img{
+        width: 32rem;
+    height: 35rem;
+    position: relative;
+    top: -7rem;
+    /* right: -55px; */
+    left: 13rem;
+    }
+
+    .section-2-content{
+        grid-column: 1 / 2;
+        grid-row: 1 /2;
+        margin-top: 10rem;
+    }
+
+    .section-2-title{
+        font-size: 2.1rem;
+        padding: 0;
+        text-align: center;
     }
 
     .section-3{
