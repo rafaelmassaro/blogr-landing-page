@@ -419,6 +419,16 @@ input[type="checkbox"],
     text-decoration: underline;
 }
 
+.attribution{
+    background-color: var(--very-dark-black-blue-footer-background);
+    text-align: center;
+    color: var(--white-text);
+}
+
+.attribution a{
+    color: var(--grayish-blue-footer-text);
+}
+
 
 @media(max-width: 1200px){
     .header{
